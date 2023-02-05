@@ -1,4 +1,4 @@
-package top.jie65535
+package top.civansun
 
 import net.mamoe.mirai.console.plugin.jvm.JvmPluginDescription
 import net.mamoe.mirai.console.plugin.jvm.KotlinPlugin
@@ -8,13 +8,13 @@ import net.mamoe.mirai.message.data.MessageSource.Key.quote
 import net.mamoe.mirai.utils.info
 import kotlin.random.Random
 
-object JDice : KotlinPlugin(
+object ADice : KotlinPlugin(
     JvmPluginDescription(
-        id = "top.jie65535.dice",
-        name = "J Dice",
+        id = "top.civansun.dice",
+        name = "A Dice",
         version = "0.1.1",
     ) {
-        author("jie65535")
+        author("civansun")
     }
 ) {
     private val regex = Regex("""\b(\d*)[dD](\d+)\b""")
@@ -34,6 +34,6 @@ object JDice : KotlinPlugin(
                 }
             }
 
-        logger.info { "Plugin loaded. https://github.com/jie65535/JDice" }
+        logger.info { "Plugin loaded." }
     }
 }
